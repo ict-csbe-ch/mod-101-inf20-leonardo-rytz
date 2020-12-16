@@ -1,0 +1,114 @@
+#nav {
+    height: auto;
+    width: 100%;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    background-color: red;
+    align-items: baseline;
+    padding: 20px;
+    overflow: auto;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    font-size: 20px;
+    padding: 10px;
+    color: white; /* Text colour*/
+    border: 1px solid black;
+    transition-duration: 0.2s;
+}
+
+.button:hover {
+    background-color: red; /* Green */
+    color: black;
+}
+
+.button a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.footer {
+    display: flex;
+    background-color: black;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: baseline;
+    color: white;
+    height: auto;
+}
+
+.footer50 {
+    width: 50%;
+}
+
+.footer25 {
+    width: 25%;
+}
+
+#BG {
+    background-color: black;
+}
+
+#TortugaButton {
+    height: 40px;
+    width: 40px;
+}
+
+.article {
+    width: 100%;
+    height: auto;
+}
+
+.imageMap {
+    width: 100%;
+    height: auto;
+}
+
+.mapBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    align-content: center;
+    width: auto;
+    padding: 20px;
+    overflow: auto;
+    height: auto;
+    background-color: rgba(29,29,29,0.8);
+    margin: 20px;
+}
+
+.item {
+    width: 50%;
+    text-align: center;
+    background-color: white;
+    height: auto;
+    margin: 20px;
+}
+
+.item p {
+    margin: 20px;
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background-color: #4CAF50; /* Green */
+    font-size: 20px;
+    padding: 10px;
+    color: white; /* Text colour*/
+    border: 1px solid black;
+    transition-duration: 0.2s;
+}
