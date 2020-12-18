@@ -1,7 +1,49 @@
+.margin20Px p{
+    font-size: 26px;
+}
+
+.margin20Px pre{
+    font-size: 26px;
+}
+
+p {
+    font-family: "Courier New", sans-serif;
+}
+
+h1{
+    font-family: Bahnschrift,sans-serif;
+}
+
+h2{
+    font-family: Bahnschrift,sans-serif;
+}
+
+h3{
+    font-family: Bahnschrift,sans-serif;
+}
+
 #nav {
     height: auto;
     width: 100%;
     margin: 0;
+    background-color: black;
+    border-bottom: 1px solid white;
+}
+
+#body {
+    width: 100%;
+    margin: 0;
+    background-color: gray;
+}
+
+.textField {
+    margin: 20px;
+    background-color: white;
+    padding: 10px;
+}
+
+.textCenter {
+    text-align:center;
 }
 
 .container{
@@ -9,30 +51,55 @@
     flex-direction: row;
     justify-content: center;
     align-content: center;
-    background-color: red;
+    align-items: baseline;
+    padding: 20px;
+    overflow: auto;
+    background-color: black;
+}
+
+.margin20Px {
+    margin: 20px;
+}
+
+.navContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
     align-items: baseline;
     padding: 20px;
     overflow: auto;
 }
-
 .button {
-    background-color: #4CAF50; /* Green */
+    background-color: black; /* Green */
     font-size: 20px;
     padding: 10px;
     color: white; /* Text colour*/
-    border: 1px solid black;
+    border: 1px solid white;
     transition-duration: 0.2s;
 }
 
 .button:hover {
-    background-color: red; /* Green */
+    background-color: white; /* Green */
+    border: 1px solid black;
+}
+
+.button:hover a {
     color: black;
+}
+
+.boxExpansion {
+    width: available;
+    height: 500px;
+    margin: 20px;
+    justify-content: left;
+    text-align: left;
 }
 
 .button a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: white;
     text-align: center;
     padding: 14px 16px;
 }
@@ -47,6 +114,7 @@
     align-items: baseline;
     color: white;
     height: auto;
+    border-top: 1px solid white;
 }
 
 .footer50 {
@@ -69,11 +137,17 @@
 .article {
     width: 100%;
     height: auto;
+    margin: 0;
 }
 
 .imageMap {
     width: 100%;
     height: auto;
+}
+
+.imageMapWide {
+    height: 100%;
+    width: auto;
 }
 
 .mapBox{
@@ -88,6 +162,27 @@
     height: auto;
     background-color: rgba(29,29,29,0.8);
     margin: 20px;
+    border: 1px solid white;
+}
+
+.imageFactionsFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: baseline;
+    align-content: space-evenly;
+    height: 500px;
+}
+
+.expansionItem {
+    text-align: left;
+    background-color: white;
+    margin: 20px;
+    width: available;
+    height: 500px;
+    padding: 10px;
+    padding-bottom: 0;
+    padding-top: 0;
 }
 
 .item {
@@ -96,6 +191,14 @@
     background-color: white;
     height: auto;
     margin: 20px;
+}
+
+.item100 {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    height: auto;
+    margin: 0;
 }
 
 .item p {
@@ -111,4 +214,61 @@
     color: white; /* Text colour*/
     border: 1px solid black;
     transition-duration: 0.2s;
+}
+
+
+.imageFactions {
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+#pageContent {
+
+}
+
+.factionBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    align-content: center;
+    width: auto;
+    padding: 20px;
+    overflow: auto;
+    height: auto;
+    background-color: rgba(29,29,29,0.8);
+    margin: 20px;
+    border: 1px solid white;
+}
+
+.flex{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: auto;
+}
+
+div.gallery {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid white;
+    float: left;
+    width: auto;
+}
+
+div.gallery:hover {
+    border: 1px solid white;
+}
+
+div.gallery img {
+    max-width: 400px;
+    height: 400px;
 }
